@@ -1,0 +1,40 @@
+html{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+#header > h1{
+	color: #696969;
+	margin: 0;
+	padding: 0;
+}
+
+#header img{
+	min-width: 220px;
+}
+
+.social-icons > a > i{
+	color: #696969
+}
+
+.social-icons > a:hover i{
+	color: black;
+	transition: 0.3s ease-in;
+}
+
+#header{
+	padding: 12px;
+}
+
+@media only screen and (max-width: 720px) {
+	#header{
+		height: 100vh;
+		margin-top: 50%;
+
+	}
+
+}
