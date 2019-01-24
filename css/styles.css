@@ -34,8 +34,9 @@ nav{
 
 .nav-item{
 	list-style-type: none;
-	display: inline-block;	
-	padding: 22px;
+	display: inline-block;
+	margin-top: 6px;
+	padding: 18px 22px;
 	font-size: 1.2em;
 	font-family: inherit;
 	cursor: pointer;
@@ -54,7 +55,7 @@ nav{
 
 @media only screen and (max-width: 991px) {
 
-	.nav-item{
+	.nav-item a{
 		font-size: 1em;
 	}
 
