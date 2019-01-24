@@ -49,6 +49,7 @@ nav{
 	.nav-item{
 		padding: 0px;
 		margin-left:2px !important;
+		font-size: 1em;
 	}
 }
 
@@ -62,6 +63,7 @@ nav{
 		color: white !important;
 		text-decoration: none;
 	}
+	
 }
 
 #header{
