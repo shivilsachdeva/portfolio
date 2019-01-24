@@ -25,18 +25,26 @@ nav{
 	overflow: hidden;
 	justify-content: center;
 	margin: 0 !important;
+	padding: 0; 
 }
 
+#navbar{
+	padding: 0;
+}
 
 .nav-item{
 	list-style-type: none;
 	display: inline-block;	
-	padding: 10px 12px;
+	padding: 22px;
 	font-size: 1.2em;
 	font-family: inherit;
 	cursor: pointer;
 	border-radius: 10px;
 	transition: .3s;
+}
+
+.nav-item > a{
+	text-decoration: none !important;
 }
 
 .nav-item a{
@@ -47,9 +55,11 @@ nav{
 @media only screen and (max-width: 991px) {
 
 	.nav-item{
-		padding: 0px;
-		margin-left:2px !important;
 		font-size: 1em;
+	}
+
+	.nav-item:hover a{
+		color: #4b4a4a;
 	}
 }
 
@@ -59,7 +69,7 @@ nav{
 		background: #00d0cf;
 		color: white
 	}
-	.nav-item:hover .nav-link{
+	.nav-item:hover a{
 		color: white !important;
 		text-decoration: none;
 	}
