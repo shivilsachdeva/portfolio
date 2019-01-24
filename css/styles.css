@@ -17,6 +17,11 @@ body{
 	min-width: 220px;
 }
 
+
+.bring-to-front{
+	z-index: 999;
+}
+
 .social-icons > a > i{
 	color: #696969
 }
@@ -27,14 +32,29 @@ body{
 }
 
 #header{
-	padding: 12px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (max-width: 720px) {
-	#header{
-		height: 100vh;
-		margin-top: 50%;
-
-	}
-
+#header p{
+	color: #696969;
 }
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* z-index: 0; */
+}
+
+.info-section{
+	padding: 22px;
+	border-bottom: 2px solid grey;
+}
+
+
+
+
