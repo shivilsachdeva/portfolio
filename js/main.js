@@ -40,3 +40,7 @@ t1.reverse();
 $(document).on("click", ".toggle-btn", function() {
     t1.reversed(!t1.reversed());
 }); 
+
+$(document).on("click", "a", function() {
+    t1.reversed(!t1.reversed());
+}); 

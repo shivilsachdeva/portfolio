@@ -19,6 +19,10 @@ body{
 
 }
 
+.clickable{
+	cursor: pointer;
+}
+
 nav{
 	width: 100%;
 	top: 0;
@@ -105,7 +109,6 @@ span.one{
 	margin-top: 25px;
 	margin-top: 25px;
 	z-index: 9999 !important;
-	cursor: pointer;
 }
 
 span.two{
@@ -119,7 +122,6 @@ span.two{
 	margin: 30px;
 	margin-top: 32px;
 	z-index: 9999 !important;
-	cursor: pointer;
 
 	
 }
@@ -134,7 +136,6 @@ span.two{
 	width: 100%;
 	top: -200%;
 	display: flex;
-	cursor: pointer;
 	
 }
 
