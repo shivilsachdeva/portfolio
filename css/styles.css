@@ -83,6 +83,7 @@ nav{
 	.toggle-btn{
 		opacity: 1;
 		touch-action: auto;
+		z-index: 1001 !important;
 	}
 
 
