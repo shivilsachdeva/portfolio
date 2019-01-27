@@ -16,7 +16,6 @@ body{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-
 }
 
 .clickable{
@@ -86,6 +85,7 @@ nav{
 @media only screen and (max-width: 991px) {
 	
 	.toggle-btn{
+		opacity: 1;
 		z-index: 1001 !important;
 	}
 
@@ -205,6 +205,7 @@ span.two{
     justify-content: center;
     align-items: center;
 	padding: 0;
+	margin: 0;
 }
 
 #header > h1{
@@ -280,40 +281,59 @@ span.two{
 
 #about-me{
 	display: grid;
-	grid-template:
-	"title title title" 80px
-	"img ff desc" auto / auto min-content auto;
-	/* border: solid 2px red; */
-	
+	grid-template: "title title title" 80px  "img ff desc" auto / minmax(100px, 250px) auto auto;
+	/* border: solid 2px red; [debug] */
 }
 
 
 #about-me h3{
 	grid-area: title;
 	align-self: center;
+	background-color: #ffcfdf;
+	background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+	padding: 25px;
+	height: 100%;
 }
 
 
 #fun-facts{
 	display: flex;
 	align-items: center;
-	padding: 18px 22px;
+	padding: 6px;
 	width: 100%;
-	justify-content: center;
+	/* justify-content: center; */
 }
 
-#fun-facts img{
-	grid-area: img;
-	max-width: 70%;
-	max-height: 251px;
-	border-radius: 300px;
-	margin-left: 12px;
+#about-me img{
+    grid-area: img;
+    max-width: 100%;
+    max-height: 251px;
+    border-radius: 32px;
+    /* margin-left: 12px; */
+    justify-self: end;
+    align-self: center;
+    min-width: 120px;
+    /* border-right: solid 1px grey; */
+	padding: 8px;
+	-webkit-filter: grayscale(33%) blur(3px);
+	filter: grayscale(33%) blur(3px);
+}
+
+#about-me img:hover{
+	/* -moz-box-shadow:    3px 1px 12px 3px #00d0cf;
+	-webkit-box-shadow: 3px 1px 12px 3px #00d0cf;
+	box-shadow:         3px 1px 12px 3px #00d0cf;
+	*/
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	transition: 0.5s ease-in-out; 
+
 }
 
 #fun-facts #facts{
 	grid-area: ff;
-	display: inherit;
-	/* border: solid 5px blue; */
+	/* display: inherit; [inline display] */
+	/* border: solid 5px blue; [debug] */
 	float: right;
 	border-left: solid 1px grey;
 	margin-left: 16px;
@@ -323,7 +343,6 @@ span.two{
 
 #fun-facts #facts p{
 	margin: 10px;
-	
 }
 
 #about-me #description{
@@ -332,11 +351,15 @@ span.two{
 	align-content: center;
 	border-left: solid 1.5px darkgray;
 	padding: 6px 22px;
-	height: 100%;
+	height: 90%;
 	/* margin: 0px; */
 	align-self: center;
 	font-size: 1rem;
-	/* border: solid 5px green; */
+	/* border: solid 5px green; [debug] */
+}
+
+#description blockquote{
+	
 }
 
 
@@ -344,10 +367,7 @@ span.two{
 @media only screen and (max-width: 991px) {
 
 	#about-me{
-		grid-template:
-		"title title" 80px
-		"img ff" auto 
-		"desc desc" auto / 100% auto;
+		grid-template: "title title" 80px   "img ff" auto    "desc desc" auto / minmax(100px, 50%) auto;
 		clear: both;
 		padding: 12px;
 	}
