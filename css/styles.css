@@ -56,6 +56,9 @@ nav{
 }
 
 
+
+
+
 .toggle-btn{
 	display: flex;
 	position: fixed;
@@ -72,8 +75,17 @@ nav{
 	width: 40px;
 	height: 12px;
 	right: 0;
-	z-index: 1;
 	z-index: 9999 !important;
+}
+
+@media only screen and (max-width: 991px) {
+	
+	.toggle-btn{
+		opacity: 1;
+		touch-action: auto;
+	}
+
+
 }
 
 .toggle-btn:hover{
