@@ -27,12 +27,6 @@ t1.to(".menu", 0.3, {
     delay: -0.2
 });
 
-// t1.to(".data", 0.1, {
-//     x: 500,
-//     y: 200,
-//     ease: Expo.easeInOut,
-//     delay: 0
-// });
 
 t1.staggerFrom(".menu ul li", 0.6, {x: -300, opacity: 0, ease:Expo.easeInOut}, 0.2);
 
