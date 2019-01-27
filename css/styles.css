@@ -114,7 +114,7 @@ span.two{
 
 .menu{
 	z-index: 1000 !important;
-	position: absolute;
+	position: fixed !important;
 	background: #101010;
 	height: 100% !important;
 	width: 100%;
