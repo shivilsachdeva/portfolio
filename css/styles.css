@@ -343,7 +343,7 @@ span.two{
 #about-me #description{
 	display: inherit;
 	grid-area: desc;
-	align-content: start;
+	align-content: center;
 	border-left: solid 1.5px darkgray;
 	padding: 6px 22px;
 	height: 90%;
@@ -362,17 +362,6 @@ span.two{
 
 /* desktop media query */
 @media only screen and (min-width: 991px) {
-	#about-me img{
-		-webkit-filter: grayscale(33%) blur(3px);
-		filter: grayscale(33%) blur(3px);
-	}
-
-	#about-me:hover img{
-		-webkit-filter: grayscale(0) blur(0);
-		filter: grayscale(0) blur(0);
-		transition: 0.5s ease-in-out; 
-	}
-
 	#description blockquote:hover {
 		opacity: 1;
 		transition: 0.5s ease;
@@ -387,6 +376,11 @@ span.two{
 		grid-template: "title title" 80px   "img ff" auto    "desc desc" auto / minmax(100px, 50%) auto;
 		clear: both;
 		padding: 12px;
+		font-size: 0.89em;
+	}
+
+	#about-me #description{
+		align-content: start;
 	}
 
 	#fun-facts #facts{
