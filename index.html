@@ -41,11 +41,11 @@
 	<div class="menu bring-to-front clickable">
 		<div class="data">
 			<ul>
-				<li>Navigation</li>
-				<li><a href="#footer">About</a></li>
-				<li><a href="#footer">Services</a></li>
-				<li><a href="#footer">Portfolio</a></li>
-				<li><a href="#footer">Contact</a></li>
+				<li>Menu</li>
+				<li><a class="nav-link" href="#about-me">About</a></li>
+				<li><a class="nav-link" href="#services">Services</a></li>
+				<li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+				<li><a class="nav-link" href="#contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -126,7 +126,7 @@
 			
 
 			<div id="description">
-				<p id="info" class="text-center">
+				<p id="info">
 					Hey there! I am a full-stack web developer currently trekking deeper into the field of computer science.
 					I am a computer science and eventual neuroscience major.
 					I spend most of my time either coding, or training Brazilian Jiu Jitsu. 
@@ -136,24 +136,89 @@
 					My aim is so continually strive towards a sort of pandemic positive growth.<br>
 					<span>I wish to develop myself to my full potential.</span> 
 				</p>
-				<blockquote class="blockquote text-center">"It is better to look suffering straight in the eye, acknowledge and respect it’s presence, and then get busy as soon as possible focusing on things we choose to focus on."
-					<p class="blockquote-footer">mihaly csikszentmihalyi</p>
+				<blockquote class="blockquote">"It is better to look suffering straight in the eye, acknowledge and respect it’s presence, and then get busy as soon as possible focusing on things we choose to focus on."
+					<p class="blockquote blockquote-footer">mihaly csikszentmihalyi</p>
 				</blockquote>
 			</div>
 	</section>
 
 	<hr>
 
-	<!-- FOLLOWING SECTIONS [...] -->
-	<!-- <section id="portfolio" class="container info-section col-md-12 col-xs-12">
-			<h3 class="text-center">What have I done?</h3>
-				<div>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolorem iusto ullam placeat! Delectus aperiam harum deleniti velit labore perferendis ipsum aut ea corporis, quos quibusdam cumque blanditiis repudiandae? Voluptates.
+	<!-- SERVICES  -->
+	<section id="services" class="info-section">
+			<h3 class="text-center">What do I offer?</h3>
+
+			<!-- DEVELOPMENT  -->
+			<div class="container row" id="toolcards">
+				<div id="toolcard" class="card">
+					<h5 class="text-center" id="toolcard-title">Development</h5>
+					<div id="tool-icon" class="text-center"><img src="/img/dev1.png"></div>
+					<div id="service-info" class="text-center">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, expedita saepe culpa deserunt, provident numquam repudiandae eligendi id molestiae aspernatur natus itaque nostrum ullam necessitatibus delectus voluptatum veniam illo distinctio?
+					</div>
+					<span class="technologies">
+						<img src="img/html.png" alt="html, css, js">
+						<img src="img/jquery.png" alt="jquery">
+						<img src="img/nodejs.png" alt="nodeJS">
+						<img src="img/angularjs.png" alt="angularJS">
+						<img src="img/wordpress.png" alt="wordpress">
+						<img src="img/php.png" alt="php">
+						<img src="img/godaddy.png" alt="go daddy">
+					</span>
 				</div>
+
+				<!-- DESIGN  -->
+				<div id="toolcard" class="card ">
+					<h5 class="text-center" id="toolcard-title">Design</h5>
+					<div id="tool-icon" class="text-center"><img src="/img/design1.png"></div>
+					<div id="service-info">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, expedita saepe culpa deserunt, provident numquam repudiandae eligendi id molestiae aspernatur natus itaque nostrum ullam necessitatibus delectus voluptatum veniam illo distinctio?
+					</div>
+					<span class="technologies">
+							<img src="img/photoshop.png" alt="photoshop cc">
+							<img src="img/illustrator.png" alt="illustrator">
+
+					</span>
+				</div>
+				
+				<!-- MARKETING -->
+				<div id="toolcard" class="card ">
+					<h5 class="text-center" id="toolcard-title">Marketing</h5>
+					<div id="tool-icon" class="text-center"><img src="/img/marketing1.png"></div>
+					<div id="service-info">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, expedita saepe culpa deserunt, provident numquam repudiandae eligendi id molestiae aspernatur natus itaque nostrum ullam necessitatibus delectus voluptatum veniam illo distinctio?
+					</div>
+					<span class="technologies">
+						<img src="img/facebook1.png" alt="facebook">
+						<img src="img/twitter.png" alt="facebook">
+						<img src="img/linkedin.png" alt="linkedin">
+						<img src="img/hubspot.png" alt="hubspot">
+						<img src="img/mailchimp.png" alt="mailchimp">
+
+					</span>
+				</div>
+
+				<!-- OPTIMIZATION  -->
+				<div id="toolcard" class="card ">
+					<h5 class="text-center" id="toolcard-title">Optimization</h5>
+					<div id="tool-icon" class="text-center"><img src="/img/marketing.png"></div>
+					<div id="service-info">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, expedita saepe culpa deserunt, provident numquam repudiandae eligendi id molestiae aspernatur natus itaque nostrum ullam necessitatibus delectus voluptatum veniam illo distinctio?
+					</div>
+					<span class="technologies">
+						<img src="img/google-analytics.png" alt="google analytics">
+						<img src="img/google-adwords.png" alt="google adwords">
+						<img src="img/google-adsense.png" alt="google adsense">
+						<img src="img/google-tag-manager.png" alt="google tag manager">
+
+					</span>	
+				</div>
+			</div>					
+
 		</section>
 
 
-		<section id="contact" class="container info-section col-md-12 col-xs-12">
+		<!-- <section id="contact" class="container info-section col-md-12 col-xs-12">
 				<h3 class="text-center">How can I help you?</h3>
 					<div>
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolorem iusto ullam placeat! Delectus aperiam harum deleniti velit labore perferendis ipsum aut ea corporis, quos quibusdam cumque blanditiis repudiandae? Voluptates.

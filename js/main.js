@@ -35,6 +35,6 @@ $(document).on("click", ".toggle-btn", function() {
     t1.reversed(!t1.reversed());
 }); 
 
-$(document).on("click", "a", function() {
+$(document).on("click", ".nav-link", function() {
     t1.reversed(!t1.reversed());
 }); 
