@@ -251,6 +251,14 @@ span.two{
 
 
 .info-section h3{
+	align-self: center;
+	background-color: #ffcfdf;
+	background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+	padding: 25px;
+	height: 100%;
+}
+
+#about-me h3{
 	grid-area: title;
 	align-self: center;
 	background-color: #ffcfdf;
@@ -467,6 +475,128 @@ span.two{
 
 
 
+.carousel{
+	position: relative;
+	height: 800px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.carousel-images {
+	width: 50%;
+	min-width: 150px;
+	height: 100%;
+	object-fit: contain;
+}
+
+.carousel-track-container{
+	background: transparent;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel-track{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	height: 100%;
+	transition: transform 250ms ease-in;
+}
+
+.carousel-slide{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.project-info{
+	height: 100%;
+	width: 50%;
+	display: flex;
+	float: right;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+
+.project-title{
+	font-weight: 900;
+	font-size: 3vmin;
+	color: inherit;
+}
+
+.project-tools{
+	font-size: 1vmin;
+	font-weight: 300;
+	opacity: 0.8;
+}
+
+.project-info button{
+	width: 100px;
+	justify-self: center;
+	align-self: center;
+	font-size: 12px;
+	cursor: pointer;
+	background: #696969;
+	border: none;
+	border-radius: 22px;
+	color: #fff;
+	font-weight: 500;
+	opacity: 0.5;
+}
+
+.carousel-btn{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.carousel-btn-left{
+	left: -50px;
+}
+
+.carousel-btn-right{
+	right: -50px;
+}
+
+.carousel-btn img{
+	width: 22px;
+}
+
+.carousel-nav{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 100px;
+}
+
+.carousel-indicator{
+	border: 0;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	background: rgba(0,0,0,0.3);
+	margin: 0 12px;
+	cursor: pointer;
+}
+
+.carousel-indicator.current-slide{
+	background: rgba(0,0,0, 0.75);
+}
+
+.is-hidden{
+	opacity: 0.1;
+	pointer-events: none;
+}
 
 
 footer{

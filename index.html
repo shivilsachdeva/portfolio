@@ -22,10 +22,12 @@
 	<!-- GSAP CDN -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
 
 	
 
@@ -103,7 +105,7 @@
 	</section>
 	
 
-	<!-- ABOUT ME  -->
+	<!-- ABOUT ME -->
 	<section id="about-me" class="info-section">
 		<h3 class="text-center">Who Am I?</h3>
 		<img src="img/shivil-headshot.jpeg" alt="" id="shiv-img">
@@ -142,7 +144,6 @@
 			</div>
 	</section>
 
-	<hr>
 
 	<!-- SERVICES  -->
 	<section id="services" class="info-section">
@@ -215,15 +216,55 @@
 				</div>
 			</div>					
 
-		</section>
+	</section>
 
+	<!-- WORKS -->
+	<section id="work" class="info-section">
+		<h3 class="text-center">What Have I Done?</h3>
+		
+		<div class="carousel">
+			<button class="carousel-btn carousel-btn-left is-hidden">
+					<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNjcgMGwyLjgzIDIuODI5LTkuMzM5IDkuMTc1IDkuMzM5IDkuMTY3LTIuODMgMi44MjktMTIuMTctMTEuOTk2eiIvPjwvc3ZnPg==">
+			</button>
+			<div class="carousel-track-container">
+				<ul class="carousel-track">
+					<li class="carousel-slide current-slide">
+						<div class="project-info text-center">
+							<h2 class="project-title text-center">The NonProfit Times</h2>
+							<p class="project-tools">Full Stack Development | Marketing | SEO</p>
+							<button class="btn-primary" href="http://thenonprofittimes.com">check it out</button>
+						</div>
+						<img class="carousel-images" src="img/learning-center-mockup.png"
+						 alt="">
+					</li>
+					<li class="carousel-slide">
+						<img class="carousel-images" src="https://images.unsplash.com/photo-1527443195645-1133f7f28990?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+						 alt="">
+					</li>
+					<li class="carousel-slide">
+						<img class="carousel-images" src="https://images.unsplash.com/photo-1527443195645-1133f7f28990?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+						 alt="">
+					</li>
+				</ul>
+			</div>
+			<button class="carousel-btn carousel-btn-right">
+					<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNy4zMyAyNGwtMi44My0yLjgyOSA5LjMzOS05LjE3NS05LjMzOS05LjE2NyAyLjgzLTIuODI5IDEyLjE3IDExLjk5NnoiLz48L3N2Zz4=">
+			</button>
+			
+			<div class="carousel-nav">
+				<button class="carousel-indicator current-slide"></button>
+				<button class="carousel-indicator"></button>
+				<button class="carousel-indicator"></button>
+			</div>
+		</div>
+	</section>
 
-		<!-- <section id="contact" class="container info-section col-md-12 col-xs-12">
+		<section id="contact" class="container info-section col-md-12 col-xs-12">
 				<h3 class="text-center">How can I help you?</h3>
 					<div>
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolorem iusto ullam placeat! Delectus aperiam harum deleniti velit labore perferendis ipsum aut ea corporis, quos quibusdam cumque blanditiis repudiandae? Voluptates.
 					</div>
-		</section> -->
+		</section>
 
 
 	<!-- FOOTER -->
