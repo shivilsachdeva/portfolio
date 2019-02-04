@@ -597,7 +597,7 @@ span.two{
 	pointer-events: none;
 }
 
-
+/* MOBILE WORKS SECTION */
 @media only screen and (max-width: 991px) {
 	.carousel-images {
 		width: 100%;
@@ -705,14 +705,13 @@ span.two{
 		padding: 10px 0;
 		position: relative;
 		bottom: 50px;
-		/* size: 12px; */
 	}
 	
 	.carousel-indicator{
 		border: 0;
 		border-radius: 50%;
-		width: 10px;
-		height: 12px;
+		/* width: 10px;
+		height: 12px; */
 		background: rgba(0,0,0,0.3);
 		margin: 0 12px;
 		cursor: pointer;
