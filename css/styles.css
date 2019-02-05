@@ -716,7 +716,7 @@ span.two{
 	.carousel-indicator{
 		border: 0;
 		border-radius: 50%;
-		width: 2px;
+		width: -2px;
 		height: 12px;
 		background: rgba(0,0,0,0.3);
 		margin: 0 6px;
