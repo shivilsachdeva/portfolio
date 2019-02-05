@@ -90,7 +90,7 @@ nav{
 @media only screen and (max-width: 991px) {
 	
 	.toggle-btn{
-		opacity: 1;
+		opacity: 0.5;
 		z-index: 1001 !important;
 	}
 
@@ -505,7 +505,7 @@ span.two{
 	list-style: none;
 	position: relative;
 	height: 100%;
-	transition: transform 250ms ease-in;
+	transition: transform 0.4s ease-in;
 }
 
 .carousel-slide{
