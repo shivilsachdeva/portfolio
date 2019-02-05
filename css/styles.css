@@ -736,8 +736,8 @@ span.two{
 
 .form-background {
   display: flex;
-  min-height: 50vh;
-  margin-bottom: 22px;
+  min-height: 20vh;
+  margin-bottom: 10px;
 }
 
 .form-container {
@@ -830,6 +830,14 @@ span.two{
   flex-direction: column;
 }
 
+@media only screen and (min-width: 991px) {
+	.app-contact:hover{
+		color: #3e3e3e;
+		background: white;
+		transition: color 0.2s ease-in-out;
+	}	
+}
+
 .app-title {
   display: flex;
   flex-direction: column;
@@ -838,7 +846,7 @@ span.two{
   font-size: 26px;
 }
 
-.app-title:after {
+/* .app-title:after {
   content: '';
   display: block;
   position: absolute;
@@ -847,18 +855,19 @@ span.two{
   width: 25px;
   height: 1px;
   background: indianred;
-}
+} */
 
 .app-contact {
-  margin-top: auto;
-  font-size: 12px;
-  background: red;
-  color: white;
-  padding: 3px;
-  width: 100%;
-  text-align: center;
-  border-radius: 33px;
-  font-weight: 800;
+ margin-top: auto;
+ font-size: 32px;
+ background: transparent;
+ color: white;
+ border: solid 3px white;
+ padding: 13px;
+ width: 100%;
+ text-align: center;
+ border-radius: 33px;
+ font-weight: 800;
 }
 
 .app-form-group {
