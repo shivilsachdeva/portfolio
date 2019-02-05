@@ -703,11 +703,6 @@ span.two{
 	.carousel-btn img{
 		width: 22px;
 	}
-
-	img.carousel-images:hover{
-		transform: scale(1.5);
-		touch-action: pan-x;
-	}
 	
 	.carousel-nav{
 		background: transparent;

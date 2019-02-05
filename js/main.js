@@ -137,6 +137,5 @@ dotNav.addEventListener('click', e => {
     hideShowArrows(slides, prevBtn, nextBtn, targetIndex);
     });
 
-
-
+ 
 
